@@ -86,6 +86,6 @@ fi
 
 # Step 7: Push to master (your branch name)
 echo "Pushing to GitHub..."
-git push origin master
+git push origin master:main
 
 echo "All done! Site synced, processed, committed, built, and pushed to main. GitHub Actions will deploy to GitHub Pages automatically."
