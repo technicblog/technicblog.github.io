@@ -67,28 +67,25 @@ echo "Hugo build failed."
 exit 1
 fi
 
-#Step 5: Add changes to Git
-echo "Staging changes for Git..."
-if git diff --quiet && git diff --cached --quiet; then
-echo "No changes to stage."
-else
+# Step 5: Add all changes
+echo "Staging all changes..."
 git add .
-fi
 
-#Step 6: Commit changes with a dynamic message
-commit_message="New Blog Post on $(date +'%Y-%m-%d %H:%M:%S')"
-if git diff --cached --quiet; then
-echo "No changes to commit."
+# Step 6: Always commit on first run, otherwise only if changes
+if git rev-parse --verify HEAD >/dev/null 2>&1; then
+    if ! git diff --cached --quiet; then
+        commit_message="New Blog Post on $(date +'%Y-%m-%d %H:%M:%S')"
+        git commit -m "$commit_message"
+    else
+        echo "No new changes to commit."
+    fi
 else
-echo "Committing changes..."
-git commit -m "$commit_message"
+    echo "Initial commit..."
+    git commit -m "Initial Hugo site with First Post"
 fi
 
-#Step 7: Push all changes to the main branch
-echo "Deploying to GitHub Main..."
-if ! git push origin main; then
-echo "Failed to push to main branch."
-exit 1
-fi
+# Step 7: Push to master (your branch name)
+echo "Pushing to GitHub..."
+git push origin master
 
 echo "All done! Site synced, processed, committed, built, and pushed to main. GitHub Actions will deploy to GitHub Pages automatically."
