@@ -1,3 +1,3 @@
 Test!
-![Test image](/images/gobo.jpg)
+![Test image](gobo.jpg)
 Testing edit
