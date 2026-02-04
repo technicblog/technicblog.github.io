@@ -1,2 +1,2 @@
 Test!
-![[gobo.jpg]]
+![gobo.jpg](/static/images/gobo.jpg)
