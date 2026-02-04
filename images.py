@@ -5,7 +5,7 @@ from urllib.parse import quote
 
 # Paths
 posts_dir = "/var/home/deck/Documents/Vault/posts/"
-attachments_dir = "/var/home/deck/Documents/Vault/images/"
+attachments_dir = "/var/home/deck/Documents/Vault/static/images/"
 static_images_dir = "/home/deck/Documents/techno/static/images/"
 
 # Create static dir
