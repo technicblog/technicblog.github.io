@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/posts/posts/first-post/</loc>
+    <loc>https://technicblog.github.io/posts/posts/first-post/</loc>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://technicblog.github.io/categories/</loc>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>https://technicblog.github.io/posts/</loc>
   </url><url>
-    <loc>https://example.org/posts/</loc>
+    <loc>https://technicblog.github.io/tags/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://technicblog.github.io/</loc>
   </url>
 </urlset>
