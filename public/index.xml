@@ -12,7 +12,7 @@
       <link>https://technicblog.github.io/posts/posts/first-post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://technicblog.github.io/posts/posts/first-post/</guid>
-      <description>&lt;p&gt;Test!&#xA;&lt;img src=&#34;https://technicblog.github.io/static/images/gobo.jpg&#34; alt=&#34;gobo.jpg&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Test!&#xA;&lt;img src=&#34;https://technicblog.github.io/images/gobo.jpg&#34; alt=&#34;Test image&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
